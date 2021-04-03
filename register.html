@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous">
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="my.html"><img src="images/back.png" alt="back"
+            style="position: absolute;top:6px;left: 7px;height: 33px;width: 33px;"></a>
+    <img src="images/pic17.png" alt=".." style="width: 375px;">
+    <div id="dis" class="mt-4" style="text-align: center;">
+        <p> <img src="images/yonghu.png" style="height: 27px;width: 27px;margin-right: 10px;"><input id="username"
+                type="text" placeholder="请输入用户名" style="height:30px; border-style:none;border-bottom:1px solid grey;">
+        </p>
+        <p><img src="images/123.png" style="height: 27px;width: 27px;margin-right: 10px;"> <input id="password"
+                type="password" placeholder="请输入密码"
+                style=" height:30px;border-style:none;border-bottom:1px solid grey;"></p>
+    </div>
+    <div style="text-align: center;">
+        <button type="button" class="btn btn-circle bg-dark text-light" style="width: 250px; margin-top: 200px;"
+            onclick="register(),sure()">注册</button>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">
+        <span class="text-secondary">注册即代表您同意</span><span>用户服务协议</span>
+    </div>
+    <script type="text/javascript">
+        //保存数据并注册
+        function register() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            window.localStorage.setItem("username", username);
+            window.localStorage.setItem("password", password);
+            window.location.href = "login.html";
+        }
+
+        function sure() {
+            var sure = confirm("注册成功")
+            if (sure == true) {
+                window.location.href = "login.html"
+            } else {
+                window.location.href = "register.html"
+            }
+        }
+
+        // function getD() {
+        //     document.getElementById("dis").innerHTML = "<p>" +
+        //         window.localStorage.getItem("username") + "" +
+        //         window.localStorage.getItem("password") + "</p>";
+        // }
+    </script>
+</body>
+
+</html>

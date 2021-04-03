@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0,user-scalable=no">
+    <title>首页</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous">
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body style="background-color: #DFDFEE;">
+    <!-- 显示日期 -->
+    <nav class="navbar navbar-expand-sm bg-light fixed-top ">
+        <div>
+            <span style="font-size: 20px;font-weight: bolder;">20</span>
+            <span style="font-size: 12px;font-weight: bold;">Jun.2020</span>
+        </div>
+        <div class="ml-auto" style="font-size: 12px;">
+            <span>地球·对流层</span>
+            <span>-273.15°C</span>
+        </div>
+    </nav>
+    <!-- 轮播图 -->
+    <div class="bd-example" style=" margin-top:46px;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/spider1.jpg" class="w-100" alt="spider1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/spider2.jpg" class="w-100" alt="spider2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/spider3.jpg" class="w-100" alt="spider3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- 卡片-阅读 -->
+    <div class="card" style="width: 100%; margin-top: 10px; ">
+        <div class="card-body">
+            <div class="card-text"></div>
+            <p class="text-secondary " style="text-align: center; letter-spacing: 10px;">-阅读-</p>
+            <h5>老林</h5>
+            <p class="text-secondary">文 /林三土</p>
+            <p>
+                人一天天老下去，奢望也一天天消失。偶尔还幻想着蹦跶一下，就像被倒扣在空玻璃瓶的蚂蚱，不死心地要奋力蹦跳。
+            </p>
+            <img src="images/pic1.png" class="align-self-center" style="width: 335px;height: 225px;" alt="...">
+            <div style="margin-top:20px;">
+                <span class="text-secondary ">6月20日</span>
+                <span style="float:right">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>1734
+                    <i class="fa fa-share-square-o" aria-hidden="true" style="margin-left: 10px;"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片-Be As One -->
+    <div class="card" style="width: 100%; margin-top: 10px; ">
+        <div class="card-body">
+            <div class="card-text"></div>
+            <p class="text-secondary " style="text-align: center; ">- Be As One -</p>
+            <h5>2020：时间都去哪儿了？</h5>
+            <p class="text-secondary">文 /颗馨等三位 </p>
+            <p>
+                我们爱平常，平常的爱人，平常的家人，平常的朋友，平常的生活。
+            </p>
+            <img src="images/pic2.png" class="align-self-center" style="width: 335px;height: 225px;" alt="...">
+            <div style="margin-top:20px;">
+                <span class="text-secondary ">6月20日</span>
+                <span style="float:right">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>1651
+                    <i class="fa fa-share-square-o" aria-hidden="true" style="margin-left: 10px;"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片-连载 -->
+    <div class="card" style="width: 100%; margin-top: 10px;">
+        <div class="card-body">
+            <div class="card-text"></div>
+            <p class="text-secondary " style="text-align: center; letter-spacing: 10px;">-连载-</p>
+            <h5>维多利亚的派对·第一章：派对前段</h5>
+            <p class="text-secondary">文 /吴沚默</p>
+            <p>
+                这是那个年过四十的女人最完美的时刻，她既艳丽如花，又运筹帷幄。
+            </p>
+            <img src="images/pic3.png" class="align-self-center" style="width: 335px;height: 225px;" alt="...">
+            <div style="margin-top:20px;">
+                <span class="text-secondary ">6月20日</span>
+                <span style="float:right">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>745
+                    <i class="fa fa-share-square-o" aria-hidden="true" style="margin-left: 10px;"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片-问答 -->
+    <div class="card" style="width: 100%; margin-top: 10px; ">
+        <div class="card-body">
+            <div class="card-text"></div>
+            <p class="text-secondary " style="text-align: center; letter-spacing: 10px;">-问答-</p>
+            <h5>人生需要哪些智慧？</h5>
+            <p class="text-secondary">林庭答</p>
+            <p>
+                我们每个人都会遇到许许多多不可说的事情，是心底的小秘密，说出来不会怎样，但就是不愿意说，说了会不开心，因为没人懂。
+            </p>
+            <img src="images/pic4.png" class="align-self-center" style="width: 335px;height: 225px;" alt="...">
+            <div style="margin-top:20px;">
+                <span class="text-secondary ">6月20日</span>
+                <span style="float:right">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>1918
+                    <i class="fa fa-share-square-o" aria-hidden="true" style="margin-left: 10px;"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片-音乐 -->
+    <div class="card" style="width: 100%; margin-top: 10px; margin-bottom: 57px;">
+        <div class="card-body">
+            <div class="card-text"></div>
+            <p class="text-secondary " style="text-align: center; letter-spacing: 10px;">-音乐-</p>
+            <h5>你我未能有幸，一起说声我愿意</h5>
+            <p class="text-secondary">文 /鹿西兮 </p>
+            <p>
+                在这个不知天高地厚的年纪，说出最荒唐的话，自以为唯爱至上，不惜与世界为敌，实则不过，浪费了你的青春。
+            </p>
+            <img src="images/pic5.png" class="align-self-center" style="width: 335px;height: 100px;" alt="...">
+            <div style="margin-top:20px;">
+                <span class="text-secondary ">6月20日</span>
+                <span style="float:right">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>1651
+                    <i class="fa fa-share-square-o" aria-hidden="true" style="margin-left: 10px;"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 底部导航栏 -->
+    <nav class="navbar  navbar-expand-sm fixed-bottom navbar-light bg-light "
+        style="border-top: 1px solid #EAEAEA ;margin-top: 100px;">
+        <div class=" col-3" style="text-align: center;">
+            <a href="home.html"><i class="fa fa-circle-o text-dark" aria-hidden="true"></i>
+                <p class="text-dark" style="margin: 0 !important;">首页</p>
+            </a>
+        </div>
+        <div class=" col-3" style="text-align: center;">
+            <a href="find.html"><i class="fa fa-windows" aria-hidden="true"></i>
+                <p style="margin: 0 !important;">发现</p>
+            </a>
+        </div>
+        <div class=" col-3" style="text-align: center;">
+            <a href="serialize.html"><i class="fa fa-book" aria-hidden="true"></i>
+                <p style="margin: 0 !important;">连载</p>
+            </a>
+        </div>
+        <div class="nav-link col-3" style="text-align: center;">
+            <a class="" href="my.html"><i class="fa fa-user " aria-hidden="true"></i>
+                <p style="margin: 0 !important;">我的</p>
+            </a>
+        </div>
+    </nav>
+</body>
+
+</html>

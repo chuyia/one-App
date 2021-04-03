@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous">
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #EEEEEE;" onload="load()">
+    <!-- 个人信息 -->
+    <div style="width: 100%;height: 250px;background-color: #BEBED9;">
+        <ul class="nav nav-tabs">
+            <li class="nav-link">
+                <img src="images/setting-white.png" alt="setting" style="height: 25px;width: 25px;">
+            </li>
+            <li class="nav-link ml-auto">
+                <img src="images/letter.png" alt="letter" style="height: 25px;width: 25px;">
+            </li>
+        </ul>
+        <div style="width: 100%; height: 200px; text-align: center;">
+            <div
+                style="margin:35px 0 0 138px; width: 100px;height: 100px; border-radius: 50%;background-color: #DFDFEE;">
+                <img src="./images/yonghu.png" alt="user" style="margin-left: 4px; width: 90px;height: 90px;">
+            </div>
+            <p id="username">
+            </p>
+        </div>
+
+    </div>
+    <!-- 我的收藏 -->
+    <div style="margin-top: 15px; background-color: white;">
+        <p style="padding: 10px 0 0 20px ;">我的收藏</p>
+        <div style="display: inline-block;margin-left: 10px; text-align: center;">
+            <img src="images/paper.png" alt="" style="width: 45px;height: 45px;">
+            <p style="margin-top:10px ;">图文</p>
+        </div>
+        <div style="display: inline-block;margin-left: 28px; text-align: center;">
+            <img src="images/book.png" alt="" style="width: 45px;height: 45px;">
+            <p style="margin-top:10px ;">文章</p>
+        </div>
+        <div style="display: inline-block;margin-left: 28px;text-align: center;">
+            <img src="images/music.png" alt="" style="width: 45px;height:45px;">
+            <p style="margin-top:10px ;">音乐</p>
+        </div>
+        <div style="display: inline-block;margin-left: 28px;text-align: center;">
+            <img src="images/mp4.png" alt="" style="width:45px;height: 45px;">
+            <p style="margin-top:10px ;">影视</p>
+        </div>
+        <div style="display: inline-block;margin-left: 28px;text-align: center;">
+            <img src="images/radio.png" alt="" style="width:45px;height: 45px;">
+            <p style="margin-top:10px ;">电台</p>
+        </div>
+    </div>
+    <!-- 我的关注 -->
+    <p style=" margin-top: 15px; height: 50px; background-color: white;line-height: 50px;letter-spacing: 2px;">
+        <img src="images/guanzhu.png" alt="guanzhu" style=" margin: 0 10px 0 10px; width: 30px;height: 30px;"> 我的关注
+        <img src="images/right.png" style="float: right; margin: 11px 10px auto auto;width: 30px;height: 30px;">
+    </p>
+    <!-- 歌单 -->
+    <p style=" margin-top: 15px; height: 50px; background-color: white;line-height: 50px;letter-spacing: 2px;">
+        <img src="images/bofang.png" alt="guanzhu" style=" margin: 0 10px 0 10px; width: 30px;height: 30px;"> 歌单
+        <img src="images/right.png" style="float: right; margin: 11px 10px auto auto;width: 30px;height: 30px;">
+    </p>
+    <!-- 我的打赏 -->
+    <p style=" margin-top: 15px; height: 50px; background-color: white;line-height: 50px;letter-spacing: 2px;">
+        <img src="images/money.png" alt="guanzhu" style=" margin: 0 10px 0 10px; width: 30px;height: 30px;"> 我的打赏
+        <img src="images/right.png" style="float: right; margin: 11px 10px auto auto;width: 30px;height: 30px;">
+    </p>
+    <!-- 退出登录 -->
+    <div style="text-align: center; margin-bottom: 80px;">
+        <button type="button" class="btn btn-circle bg-danger text-light"
+            style="width: 250px; margin-top: 130px; letter-spacing: 4px;" onclick="exit()">退出登录</button>
+    </div>
+    <!-- 底部导航栏 -->
+    <nav class="navbar navbar-expand-sm fixed-bottom navbar-light bg-light" style="border-top: 1px solid #eaeaea;">
+        <div class=" col-3" style="text-align: center;">
+            <a href="home.html"><i class="fa fa-circle-o" aria-hidden="true"></i>
+                <p style="margin: 0 !important;">首页</p>
+            </a>
+        </div>
+        <div class=" col-3" style="text-align: center;">
+            <a href="find.html"><i class="fa fa-windows" aria-hidden="true"></i>
+                <p style="margin: 0 !important;">发现</p>
+            </a>
+        </div>
+        <div class=" col-3" style="text-align: center;">
+            <a href="serialize.html"><i class="fa fa-book" aria-hidden="true"></i>
+                <p style="margin: 0 !important;">连载</p>
+            </a>
+        </div>
+        <div class="nav-link col-3" style="text-align: center;">
+            <a class="" href="main.html"><i class="fa fa-user  text-dark" aria-hidden="true"></i>
+                <p class="text-dark" style="margin: 0 !important;">我的</p>
+            </a>
+        </div>
+        <script type="text/javascript">
+            function load() {
+                // var username = document.getElementById("username").value;
+                // username = window.localStorage.getItem("username");
+                document.getElementById("username").innerHTML = window.localStorage.getItem("username");
+            }
+
+            function exit() {
+                var sure = confirm("退出后部分功能无法使用，一定要退出吗?")
+                if (sure == true) {
+                    window.location.href = "my.html"
+                } else {
+
+                }
+            }
+        </script>
+    </nav>
+</body>
+
+</html>

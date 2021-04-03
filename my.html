@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0,user-scalable=no" />
+    <title>我的</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous">
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 注册 -->
+    <p>
+        <img src="images/setting.png" alt="setting" style="height: 25px;width: 25px;margin: 10px 0 0 10px;">
+    </p>
+    <div style="text-align: center;margin-bottom: 30px;">
+        <button type="button" class="btn btn-circle bg-dark text-light" style="margin-top: 200px;"
+            onclick="login()">登录</button>
+        <p style="margin-top: 20px; ">还没有账号？点击<span><a href="register.html" class="text-dark"
+                    style="text-decoration:underline;">注册</a></span>
+        </p>
+    </div>
+    <div class=" icon" style="overflow: hidden;">
+        <div style="float: left; margin-left: 20px; margin-right: 90px;">
+            <img src="images/weixin.png" alt="wechat" style="width: 50px; height: 50px;" />
+        </div>
+        <div style="float: left; margin-right: 90px;">
+            <img src="images/weibo.png" alt="sina" style="width: 50px; height: 50px;" />
+        </div>
+        <div style="float: left;">
+            <img src="images/qq.png" alt="qq" style="width: 48px; height: 48px;" />
+        </div>
+    </div>
+    <div style="text-align: center;margin-top: 174px;">
+        <span class="text-secondary">创建账号即代表您同意</span><span>用户服务协议</span>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <nav class="navbar navbar-expand-sm fixed-bottom navbar-light bg-light" style="border-top: 1px solid #eaeaea;">
+        <div class=" col-3" style="text-align: center;">
+            <a href="home.html"><i class="fa fa-circle-o" aria-hidden="true"></i>
+                <p style="margin: 0 !important;">首页</p>
+            </a>
+        </div>
+        <div class=" col-3" style="text-align: center;">
+            <a href="find.html"><i class="fa fa-windows" aria-hidden="true"></i>
+                <p style="margin: 0 !important;">发现</p>
+            </a>
+        </div>
+        <div class=" col-3" style="text-align: center;">
+            <a href="serialize.html"><i class="fa fa-book" aria-hidden="true"></i>
+                <p style="margin: 0 !important;">连载</p>
+            </a>
+        </div>
+        <div class="nav-link col-3" style="text-align: center;">
+            <a class="" href="my.html"><i class="fa fa-user text-dark" aria-hidden="true"></i>
+                <p class="text-dark" style="margin: 0 !important;">我的</p>
+            </a>
+        </div>
+    </nav>
+    <script type="text/javascript">
+        function login() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+
+</html>
