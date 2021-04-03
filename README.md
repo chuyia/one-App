@@ -21,27 +21,31 @@ One App项目开发
 1.1进入“我的”页面    
 ![image](https://github.com/chuyia/one-App/blob/main/md-images/1.png)   
 1.2点击“注册”进入注册页面    
+![image](https://github.com/chuyia/one-App/blob/main/md-images/2.png)    
 1.3输入用户名和密码进行注册    
- 
+![image](https://github.com/chuyia/one-App/blob/main/md-images/3.png)    
 1.4点击“注册”，弹出提示框，点击“确定”表示用户注册成功，进入登录页，点击“取消”表示用户取消注册，返回注册页且注册信息清空。    
-
+![image](https://github.com/chuyia/one-App/blob/main/md-images/4.png)   
 2.	登录功能    
 2.1注册成功后进入登录页，输入正确的用户名以及密码，点击“登录”按钮进行登录。    
- 
+![image](https://github.com/chuyia/one-App/blob/main/md-images/5.png)    
 2.2若用户名或密码输入错误，弹出提示“用户名或密码输入错误，请重新输入！”，用户登录失败    
- 
-
+ ![image](https://github.com/chuyia/one-App/blob/main/md-images/6.png)   
 2.3若用户名或密码输入正确，则进入用户的个人页。个人页的头像为默认头像，头像下方显示用户的登录名。    
-  
+![image](https://github.com/chuyia/one-App/blob/main/md-images/7.png)   
+![image](https://github.com/chuyia/one-App/blob/main/md-images/8.png)  
 3.	页面跳转功能    
 3.1点击底部导航栏的相应图标会进入到相应页面，在当前页面时，对应的图标也会从蓝色变成黑色，用户可通过滑动手机页面查看页面内容    
-  
+![image](https://github.com/chuyia/one-App/blob/main/md-images/9.png)  
+![image](https://github.com/chuyia/one-App/blob/main/md-images/10.png)  
+![image](https://github.com/chuyia/one-App/blob/main/md-images/11.png)  
+![image](https://github.com/chuyia/one-App/blob/main/md-images/12.png)  
 4.	退出登录功能    
 4.1点击个人主页底部的“退出登录”按钮，弹出确认框    
-  
+![image](https://github.com/chuyia/one-App/blob/main/md-images/13.png)  
+![image](https://github.com/chuyia/one-App/blob/main/md-images/14.png)  
 4.2点击“确定”进入到未登录状态的“我的”页面 ，点击“取消”返回已登录状态的个人主页    
-
 5.	轮播功能    
 5.1轮播图会每秒自动切换到下一张，也可以点击轮播图两侧的箭头切换图片    
- 
+![image](https://github.com/chuyia/one-App/blob/main/md-images/15.png)  
 
