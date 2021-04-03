@@ -19,6 +19,7 @@ One App项目开发
 三、用户文档
 1、注册功能
 1.1进入“我的”页面
+![image](https://github.com/chuyia/one-App/edit/main/md-images/1.png)
 1.2点击“注册”进入注册页面
 1.3输入用户名和密码进行注册
  
